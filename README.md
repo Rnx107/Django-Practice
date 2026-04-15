@@ -6,4 +6,14 @@ Following a custom made django curriculum
 - [x] Python: classes, inheritance, __init__ — write a Person → Student subclass
 - [x] Git: create your learning repo, commit, push to GitHub. This is Day 1 of your public record.
 
----
+
+
+# Day 2
+- [x] Python: file I/O, exceptions, context managers — script that reads a CSV and handles bad rows gracefully
+- [X] Python: virtualenv, pip, requirements.txt — install Django 4.2, verify with `django-admin --version`
+
+
+
+# Day 3
+- [x] Django: run startproject. Study every file. Read settings.py top to bottom — understand each setting.
+- [x] 1 hr 00 min Django: create a `polls` app, write one view, wire one URL — get 'Hello World' in browser
