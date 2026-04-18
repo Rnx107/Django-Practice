@@ -1,32 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questions</title>
+    <title>
+        {% if title %}{{ title }}{% else %}Polls App{% endif %}
+    </title>
 </head>
-
 <body>
-    <h1>This is base html file</h1>
 
-    <h2>Questions List</h2>
-
-    {% for question in questions %}
-    <div>
-        <h3>{{ question.title }}</h3>
-        {% if question.description %}
-        <p>{{ question.description }}</p>
-        {% else %}
-        <p>No description</p>
-        {% endif %}
-        <small>Created: {{ question.created_at }}</small>
-    </div>
-    <hr>
-    {% empty %}
-    <p>No questions available.</p>
-    {% endfor %}
+    {% block content %}
+    {% endblock %}
 
 </body>
-
 </html>

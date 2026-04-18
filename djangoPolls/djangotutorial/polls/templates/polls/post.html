@@ -1,0 +1,29 @@
+{% extends 'polls/base.html'%}
+{% block content%}
+<div>
+    <h2>All the Authors</h2>
+    {% for author in authors%}
+    <ul>
+        <li>
+            {{author}}
+        </li>
+    </ul>
+    {% endfor %}
+</div>
+<hr>
+<div>
+    <h2>All the posts</h2>
+    {% for post in posts%}
+    <h5>{{post.title}}</h5>
+    <p>{{post.content}}</p>
+    <p>{{post.published_Date}}</p>
+    {% if author %}
+    {% for a in author%}
+    <p>{{post.author}}</p>
+    {% endfor %}
+    {% else %}
+    <p>No author Exists</p>
+    {% endif %}
+    {% endfor%}
+</div>
+{% endblock %}
