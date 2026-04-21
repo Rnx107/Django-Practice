@@ -26,3 +26,7 @@ Completed a one week cycle as Week 0.
 Things to keep an eye on:
 1. naming convention (plural names in list, context etc)
 2. naming consistency among files
+
+# Day 6
+- [x] Study and use .env and create a .env.example
+- [x] use podman/docker compose to create and test a container
